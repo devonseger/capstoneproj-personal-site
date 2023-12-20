@@ -174,13 +174,17 @@ body .hero {
 @media only screen and (max-width: 390px) {
     .row-one {
     grid-template-columns: 1fr;
+    }
+    body .hero {
+        height: 900px; /* Adjust the height as needed */
+    }
 }
-}
+
 
 @media screen and (min-width: 391px) and (max-width: 768px) {
     .row-one {
         grid-template-columns: repeat(2, 1fr);
-    }
+    }   
 }
 
 
