@@ -141,13 +141,19 @@ body .hero {
 } */
 
 .row-one {
-    display: flex ;
+    /* display: flex ;
     flex-wrap: wrap ;
-    justify-content: center; /* Adjust as needed for spacing between images */
+    justify-content: center;
     align-items: center;
     margin: 0;
-    max-width: 2100px ;
-}
+    max-width: 2100px ; */
+
+    display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            /* grid-template-rows: 1fr 1fr 1fr 1fr; */
+            gap: 9px;
+        }
+
 
 .img-container {
     display: flex;
@@ -157,12 +163,28 @@ body .hero {
 .row-one img {
     width: 100%;
     max-width: 512px; /* Fixed width for each image */
-    height: auto;
-    
+    height: 100%;
     margin: 5px; /* Adjust as needed for spacing between images */
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
 .headshot {
     height: 300px;
+}
+
+@media screen and (max-width: 768px) {
+    .row-one {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media screen and (max-width: 1201px) and (min-width: 769px){
+    .row-one {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.tall {
+    grid-row: span 2;
 }
