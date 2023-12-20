@@ -11,3 +11,18 @@ $(document).ready(function(){
       $('.hero > h3').css('opacity',1-(scrolled*.00175));
     };
   });
+
+  $(document).ready(function() {
+    // Function to set the height of .hero based on window height
+    function setHeroHeight() {
+        var windowHeight = $(window).height();
+        $('.hero').css('height', windowHeight);
+    }
+
+    // Call the function on document ready and window resize
+    setHeroHeight();
+
+    $(window).resize(function() {
+        setHeroHeight();
+    });
+});

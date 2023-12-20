@@ -7,7 +7,7 @@ body .hero {
     right: 0;
     background: url("./assets/images/herobackgroundmaybe.jpg");
     background-size: cover;
-    height: 80vh;
+    /* height: 80vh; */
     width: 100vw;
   }
   body .hero:before {
@@ -174,9 +174,6 @@ body .hero {
 @media only screen and (max-width: 390px) {
     .row-one {
     grid-template-columns: 1fr;
-    }
-    body .hero {
-        height: 900px; /* Adjust the height as needed */
     }
 }
 
