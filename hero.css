@@ -156,12 +156,12 @@ body .hero {
 
 
 .img-container {
-    display: flex;
+    display: inline-block !important;
     justify-content: center;
 }
 
 .row-one img {
-    width: 100%;
+    width: 100% !important;
     max-width: 512px; /* Fixed width for each image */
     height: 100% !important;
     margin: 5px; /* Adjust as needed for spacing between images */
