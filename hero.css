@@ -163,7 +163,7 @@ body .hero {
 .row-one img {
     width: 100%;
     max-width: 512px; /* Fixed width for each image */
-    height: 100%;
+    height: 100% !important;
     margin: 5px; /* Adjust as needed for spacing between images */
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
